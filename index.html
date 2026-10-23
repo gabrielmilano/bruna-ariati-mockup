@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Dra. Bruna Ariati · Estética Avançada em Criciúma (prévia)</title>
+<meta name="description" content="Prévia de site para a Dra. Bruna Ariati — harmonização facial, toxina botulínica, preenchimento e bichectomia no Centro de Criciúma.">
+<meta property="og:title" content="Dra. Bruna Ariati · Estética Avançada · prévia de site">
+<meta property="og:description" content="Uma proposta de página com os procedimentos e o pré-agendamento direto no WhatsApp.">
+<meta property="og:image" content="assets/dra-bruna.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,600;1,6..96,500&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+  /* Identidade: preto profundo das fotos dela + nude rosado da pele + champagne nos detalhes. */
+  :root {
+    --noir: #141113;
+    --noir-2: #1f1a1d;
+    --nude: #ecd9cf;
+    --nude-2: #f7eee9;
+    --champ: #c6a17a;
+    --champ-esc: #8c6a46;
+    --texto: #2a2326;
+    --suave: #6f6268;
+    --linha: #e4d6ce;
+    --zap: #1f8f55;
+    --serif: "Bodoni Moda", "Didot", Georgia, serif;
+    --sans: "Manrope", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--nude-2); color: var(--texto); font: 16px/1.6 var(--sans); }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  .wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
+  .previa { background: var(--champ); color: var(--noir); text-align: center; font-size: 13px; font-weight: 600; padding: 7px 12px; }
+
+  /* Topo */
+  header { position: sticky; top: 0; z-index: 20; background: rgba(20, 17, 19, .92); backdrop-filter: blur(10px); color: var(--nude); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+  .marca { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .marca img { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; border: 1px solid var(--champ); }
+  .marca b { font-family: var(--serif); font-weight: 500; font-size: 19px; letter-spacing: .01em; }
+  .marca small { display: block; font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: var(--champ); margin-top: -3px; }
+  nav { display: flex; gap: 22px; font-size: 14px; }
+  nav a { text-decoration: none; opacity: .8; }
+  nav a:hover { opacity: 1; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border-radius: 999px; font-weight: 700; font-size: 15px; text-decoration: none; border: 0; cursor: pointer; transition: transform .2s, background-color .2s; }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-champ { background: var(--champ); color: var(--noir); }
+  .btn-champ:hover { background: #d4b08a; }
+  .btn-linha { border: 1px solid rgba(236, 217, 207, .45); color: var(--nude); background: transparent; }
+  .btn-zap { background: var(--zap); color: #fff; }
+  .btn svg { width: 18px; height: 18px; }
+
+  /* Herói */
+  .heroi { background: radial-gradient(70% 90% at 85% 10%, #3a2a2f 0%, transparent 60%), var(--noir); color: var(--nude); padding: 72px 0 84px; overflow: hidden; }
+  .heroi .wrap { display: grid; grid-template-columns: 1.2fr .8fr; gap: 56px; align-items: center; }
+  .sobre-titulo { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--champ); font-weight: 600; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(38px, 6vw, 68px); line-height: 1.04; margin: 14px 0 18px; letter-spacing: -.01em; text-wrap: balance; }
+  h1 em { color: var(--champ); }
+  .heroi p.lead { font-size: 18px; color: #d9c6bc; max-width: 520px; margin: 0 0 28px; }
+  .heroi .acoes { display: flex; flex-wrap: wrap; gap: 12px; }
+  .prova { display: flex; align-items: center; gap: 12px; margin-top: 30px; font-size: 14px; color: #d9c6bc; }
+  .estrelas { color: var(--champ); letter-spacing: 2px; font-size: 16px; }
+  .prova b { color: var(--nude); font-size: 16px; }
+  .retrato { position: relative; justify-self: center; width: min(360px, 100%); aspect-ratio: 4 / 5; border-radius: 200px 200px 24px 24px; background: linear-gradient(160deg, #3b2c31, #1c1619); border: 1px solid rgba(198, 161, 122, .35); display: grid; place-items: center; text-align: center; padding: 28px; }
+  .retrato img { width: 132px; height: 132px; border-radius: 50%; object-fit: cover; border: 2px solid var(--champ); margin-bottom: 18px; }
+  .retrato b { font-family: var(--serif); font-size: 26px; font-weight: 500; display: block; }
+  .retrato span { font-size: 13px; color: var(--champ); letter-spacing: .08em; }
+  .retrato .nota-foto { position: absolute; bottom: 14px; left: 0; right: 0; font-size: 11px; color: #9f8c86; letter-spacing: 0; }
+
+  /* Seções */
+  section.bloco { padding: 84px 0; }
+  .cab { max-width: 620px; margin-bottom: 40px; }
+  h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(30px, 4.2vw, 46px); line-height: 1.1; margin: 10px 0 12px; text-wrap: balance; }
+  .cab p { color: var(--suave); margin: 0; }
+  .grade { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .proc { background: #fff; border: 1px solid var(--linha); border-radius: 20px; padding: 26px 22px; display: flex; flex-direction: column; gap: 10px; }
+  .proc .n { font-family: var(--serif); font-style: italic; color: var(--champ-esc); font-size: 20px; }
+  .proc h3 { margin: 0; font-family: var(--serif); font-weight: 600; font-size: 22px; }
+  .proc p { margin: 0; color: var(--suave); font-size: 15px; flex: 1; }
+  .proc a { font-weight: 700; font-size: 14px; color: var(--champ-esc); text-decoration: none; }
+
+  /* Pré-agendamento */
+  .agenda { background: var(--noir); color: var(--nude); border-radius: 28px; padding: 44px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px; align-items: start; }
+  .agenda h2 { color: var(--nude); }
+  .agenda .cab p { color: #cdb9af; }
+  .passos { display: grid; gap: 22px; }
+  .passo legend { font-weight: 700; margin-bottom: 10px; font-size: 15px; }
+  fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .opcoes { display: flex; flex-wrap: wrap; gap: 8px; }
+  .opcoes label { position: relative; }
+  .opcoes input { position: absolute; opacity: 0; inset: 0; }
+  .opcoes span { display: inline-flex; min-height: 44px; align-items: center; padding: 0 16px; border-radius: 999px; border: 1px solid rgba(236, 217, 207, .35); font-size: 14.5px; cursor: pointer; transition: background-color .15s, color .15s; }
+  .opcoes input:checked + span { background: var(--champ); border-color: var(--champ); color: var(--noir); font-weight: 700; }
+  .opcoes input:focus-visible + span { outline: 2px solid var(--nude); outline-offset: 2px; }
+  .campo-nome { width: 100%; min-height: 48px; border-radius: 12px; border: 1px solid rgba(236, 217, 207, .35); background: var(--noir-2); color: var(--nude); padding: 0 14px; font: inherit; }
+  .aviso-form { font-size: 13px; color: #bda89f; margin: 4px 0 0; }
+
+  /* Avaliações e endereço */
+  .duas { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .cartao { background: #fff; border: 1px solid var(--linha); border-radius: 22px; padding: 30px; }
+  .grande { font-family: var(--serif); font-size: 64px; line-height: 1; }
+  .cartao p { color: var(--suave); }
+  .etapas { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; counter-reset: e; }
+  .etapas li { counter-increment: e; display: grid; grid-template-columns: 34px 1fr; gap: 12px; }
+  .etapas li::before { content: counter(e); width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--nude); color: var(--champ-esc); font-family: var(--serif); font-weight: 600; }
+  .etapas b { display: block; }
+  .etapas span { color: var(--suave); font-size: 15px; }
+
+  footer { background: var(--noir); color: #bda89f; padding: 40px 0 110px; font-size: 14px; }
+  footer .wrap { display: grid; gap: 8px; }
+  footer b { color: var(--nude); font-family: var(--serif); font-weight: 500; font-size: 20px; }
+  .ns { margin-top: 18px; padding-top: 16px; border-top: 1px solid #2c2427; font-size: 12.5px; }
+
+  .zap-fixo { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 30; width: 58px; height: 58px; border-radius: 50%; background: var(--zap); color: #fff; display: grid; place-items: center; box-shadow: 0 10px 30px rgba(0, 0, 0, .25); }
+  .zap-fixo svg { width: 28px; height: 28px; }
+
+  @media (max-width: 960px) {
+    .grade { grid-template-columns: 1fr 1fr; }
+    .agenda { grid-template-columns: 1fr; padding: 32px 22px; }
+  }
+  @media (max-width: 760px) {
+    nav { display: none; }
+    .heroi { padding: 44px 0 56px; }
+    .heroi .wrap { grid-template-columns: 1fr; gap: 36px; }
+    .retrato { aspect-ratio: auto; border-radius: 24px; padding: 24px; }
+    .retrato .nota-foto { position: static; margin-top: 10px; }
+    .heroi .acoes .btn { flex: 1 1 100%; }
+    section.bloco { padding: 60px 0; }
+    .grade, .duas { grid-template-columns: 1fr; }
+    header .btn { min-height: 42px; padding: 0 18px; font-size: 14px; white-space: nowrap; }
+    header .longo { display: none; }
+    .marca { white-space: nowrap; min-width: 0; }
+    .marca b { font-size: 17px; }
+    .marca small { font-size: 9.5px; letter-spacing: .14em; }
+    .sobre-titulo { letter-spacing: .14em; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn { transition: none; } }
+</style>
+</head>
+<body>
+<div class="previa">Prévia de site feita pela Negócios Smart para a Dra. Bruna Ariati · não é o site oficial</div>
+
+<header>
+  <div class="wrap">
+    <a class="marca" href="#topo"><img src="assets/dra-bruna.jpg" alt=""><div><b>Dra. Bruna Ariati</b><small>Estética avançada</small></div></a>
+    <nav aria-label="Principal"><a href="#procedimentos">Procedimentos</a><a href="#agendar">Agendar</a><a href="#consultorio">Consultório</a></nav>
+    <a class="btn btn-champ" href="#agendar">Agendar<span class="longo">&nbsp;avaliação</span></a>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="heroi">
+    <div class="wrap">
+      <div>
+        <span class="sobre-titulo">Harmonização facial · Centro de Criciúma</span>
+        <h1>Realçar o que já é seu, <em>com naturalidade.</em></h1>
+        <p class="lead">Toxina botulínica, preenchimentos, harmonização facial e bichectomia com a Dra. Bruna Ariati, cirurgiã-dentista com atuação em estética avançada da face.</p>
+        <div class="acoes">
+          <a class="btn btn-champ" href="#agendar">Agendar minha avaliação</a>
+          <a class="btn btn-linha" href="#procedimentos">Ver procedimentos</a>
+        </div>
+        <div class="prova"><span class="estrelas" aria-hidden="true">★★★★★</span><span><b>5,0</b> · 371 avaliações no Google</span></div>
+      </div>
+      <div class="retrato">
+        <div>
+          <img src="assets/dra-bruna.jpg" alt="Dra. Bruna Ariati">
+          <b>Dra. Bruna Ariati</b>
+          <span>Cirurgiã-dentista · CRO-SC 17875</span>
+          <p class="nota-foto">No site final entram fotos profissionais do consultório e da doutora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco" id="procedimentos">
+    <div class="wrap">
+      <div class="cab">
+        <span class="sobre-titulo" style="color:var(--champ-esc)">Procedimentos</span>
+        <h2>Cada rosto pede um plano diferente.</h2>
+        <p>Tudo começa por uma avaliação com a própria Dra. Bruna, que indica o que faz sentido para você, e o que não faz.</p>
+      </div>
+      <div class="grade">
+        <article class="proc"><span class="n">01</span><h3>Toxina botulínica</h3><p>Suaviza linhas de expressão da testa, entre as sobrancelhas e ao redor dos olhos.</p><a href="#agendar" data-proc="Toxina botulínica (botox)">Quero avaliar →</a></article>
+        <article class="proc"><span class="n">02</span><h3>Preenchimento</h3><p>Ácido hialurônico para lábios, olheiras, contorno e volume, planejado para manter a expressão.</p><a href="#agendar" data-proc="Preenchimento">Quero avaliar →</a></article>
+        <article class="proc"><span class="n">03</span><h3>Harmonização facial</h3><p>Um plano que olha o rosto como um todo e equilibra as proporções em etapas.</p><a href="#agendar" data-proc="Harmonização facial">Quero avaliar →</a></article>
+        <article class="proc"><span class="n">04</span><h3>Bichectomia</h3><p>Procedimento para afinar o terço inferior do rosto, indicado após avaliação.</p><a href="#agendar" data-proc="Bichectomia">Quero avaliar →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco" id="agendar" style="padding-top:0">
+    <div class="wrap">
+      <div class="agenda">
+        <div class="cab" style="margin:0">
+          <span class="sobre-titulo">Pré-agendamento</span>
+          <h2>Marque sua avaliação em 3 toques.</h2>
+          <p>Você escolhe o procedimento e o melhor período, e a mensagem chega pronta no WhatsApp do consultório. A equipe confirma o horário com você.</p>
+        </div>
+        <form class="passos" id="form" novalidate>
+          <fieldset class="passo">
+            <legend>1. O que você quer avaliar?</legend>
+            <div class="opcoes">
+              <label><input type="radio" name="proc" value="Toxina botulínica (botox)" checked><span>Toxina botulínica</span></label>
+              <label><input type="radio" name="proc" value="Preenchimento"><span>Preenchimento</span></label>
+              <label><input type="radio" name="proc" value="Harmonização facial"><span>Harmonização facial</span></label>
+              <label><input type="radio" name="proc" value="Bichectomia"><span>Bichectomia</span></label>
+              <label><input type="radio" name="proc" value="Ainda não sei, quero uma avaliação"><span>Ainda não sei</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="passo">
+            <legend>2. Melhor período</legend>
+            <div class="opcoes">
+              <label><input type="radio" name="periodo" value="manhã" checked><span>Manhã</span></label>
+              <label><input type="radio" name="periodo" value="tarde"><span>Tarde</span></label>
+              <label><input type="radio" name="periodo" value="fim da tarde (até 19h)"><span>Fim da tarde</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="passo">
+            <legend><label for="nome">3. Seu nome</label></legend>
+            <input class="campo-nome" id="nome" autocomplete="given-name" placeholder="Como podemos te chamar?">
+          </fieldset>
+          <button class="btn btn-zap" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Enviar pelo WhatsApp</button>
+          <p class="aviso-form">Na prévia o botão já abre o WhatsApp do consultório com a mensagem pronta.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloco" id="consultorio" style="padding-top:0">
+    <div class="wrap duas">
+      <div class="cartao">
+        <span class="sobre-titulo" style="color:var(--champ-esc)">Quem já passou por aqui</span>
+        <div class="grande">5,0</div>
+        <p><span class="estrelas">★★★★★</span><br>371 avaliações de pacientes no Google.</p>
+        <a class="btn btn-champ" href="https://www.google.com/search?q=Est%C3%A9tica+Avan%C3%A7ada+Dra.+Bruna+Ariati+Crici%C3%BAma" target="_blank" rel="noopener">Ler as avaliações</a>
+      </div>
+      <div class="cartao">
+        <span class="sobre-titulo" style="color:var(--champ-esc)">Como é a primeira consulta</span>
+        <ol class="etapas" style="margin-top:16px">
+          <li><div><b>Avaliação</b><span>Conversa sobre o que te incomoda e análise do rosto.</span></div></li>
+          <li><div><b>Plano personalizado</b><span>A Dra. Bruna explica as opções, as etapas e os cuidados.</span></div></li>
+          <li><div><b>Procedimento</b><span>No consultório, com agendamento no horário combinado.</span></div></li>
+          <li><div><b>Acompanhamento</b><span>Retorno para avaliar o resultado e tirar dúvidas.</span></div></li>
+        </ol>
+      </div>
+      <div class="cartao" style="grid-column:1/-1">
+        <span class="sobre-titulo" style="color:var(--champ-esc)">Consultório</span>
+        <h2 style="margin-top:8px">Centro de Criciúma</h2>
+        <p>Travessa Conselheiro Francisco Meller, 48 · Centro · Criciúma/SC<br>Segunda a sexta, das 9h às 19h</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <a class="btn btn-champ" href="https://www.google.com/maps/search/?api=1&query=Travessa+Conselheiro+Francisco+Meller+48+Crici%C3%BAma" target="_blank" rel="noopener">Como chegar</a>
+          <a class="btn btn-zap" href="#agendar">Agendar avaliação</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>Dra. Bruna Ariati · Estética Avançada</b>
+    <span>Responsável técnica: Dra. Bruna Ariati · Cirurgiã-dentista · CRO-SC 17875</span>
+    <span>Travessa Conselheiro Francisco Meller, 48 · Centro · Criciúma/SC · (48) 99954-9256</span>
+    <span class="ns">Prévia criada pela Negócios Smart (negociosmart.com.br) como proposta de site. Textos e fotos são provisórios e serão revisados com a Dra. Bruna antes da publicação.</span>
+  </div>
+</footer>
+
+<a class="zap-fixo" href="#agendar" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script>
+  // Card "Quero avaliar" já marca o procedimento no pré-agendamento.
+  document.querySelectorAll("[data-proc]").forEach((a) => a.addEventListener("click", () => {
+    const r = document.querySelector(`input[name=proc][value="${a.dataset.proc}"]`);
+    if (r) r.checked = true;
+  }));
+  document.getElementById("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const f = new FormData(e.target);
+    const nome = document.getElementById("nome").value.trim();
+    const msg = `Olá, Dra. Bruna! ${nome ? "Sou " + nome + ". " : ""}Vim pelo site e gostaria de agendar uma avaliação de ${f.get("proc")}. Prefiro ${f.get("periodo")}.`;
+    window.open("https://wa.me/5548999549256?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  });
+</script>
+</body>
+</html>
